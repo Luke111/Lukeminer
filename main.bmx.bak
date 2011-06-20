@@ -1,0 +1,11 @@
+Repeat
+	While Not bbKeyHit(1)
+		bbRenderWorld()
+		bbUpdateWorld()
+		UpdatePlayer(cam)
+		doCulling(cam)
+		displayHUD()
+		bbFlip
+	Wend
+	End
+Forever

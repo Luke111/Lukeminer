@@ -1,0 +1,21 @@
+Function doSplashMain()
+	image = bbLoadImage("splash.jpg")
+	bbDrawImage image,0,0
+	bbFlip
+	Delay 8000
+End Function
+
+Function doPauseMenu()
+	bbCls
+	bbText 0,0,"PAUSED"
+	bbText 0,15,"Space For Quit"
+	bbFlip
+	While Not bbKeyHit(57)
+		If bbKeyHit(57) Then
+			End
+		ElseIf bbKeyHit(1) Then
+			Return 0
+		EndIf
+	Wend
+	end
+End Function
